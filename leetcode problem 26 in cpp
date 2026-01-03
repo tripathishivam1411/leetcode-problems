@@ -1,0 +1,24 @@
+// remove duplicate element from sorted array and return number of unique element
+// i  am using two approach
+
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        int n=nums.size();
+        int officer=0;
+        int cm=1;
+        int unique=1;
+        while(cm<n){
+            if(nums[cm]==nums[cm-1]){
+                cm+=1;
+                continue;
+            }
+            nums[officer +1]=nums[cm];
+           officer++;
+            unique++;
+            cm=cm+1;
+            
+        }
+        return unique;
+    }
+};
