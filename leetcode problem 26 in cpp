@@ -1,5 +1,5 @@
 // remove duplicate element from sorted array and return number of unique element
-// i  am using two approach
+// i  am using two POINTER approach
 
 class Solution {
 public:
